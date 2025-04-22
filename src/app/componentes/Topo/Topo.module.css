@@ -1,0 +1,46 @@
+.topo {
+    width: 100%;
+    height: 10vh;
+    padding: 20px;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 50px;
+    height: 35px;
+}
+header button .image {
+    width: 50px;
+    height: 50px;
+}
+
+.topo button {
+    border-radius: 50%; 
+    background-color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.topo button .image {
+    width: 25px;
+    height: 25px;
+}
+
+.modo_escuro .topo {
+    background: #333;
+}
+
+
+.modo_escuro button {
+    background-color: #333;
+    border-color: #fff;
+}
+
+@media (max-width: 768px){
+    .topo {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,83 @@
+.banner {
+    max-width: 100%;
+    height: auto; /* Permitir altura dinâmica */
+    display: flex;
+    flex-wrap: wrap; /* Permitir quebra de linha */
+}
+
+.container {
+    flex: 1 1 50%; /* Permitir flexibilidade e quebra de linha */
+    min-width: 300px; /* Largura mínima para evitar elementos muito pequenos */
+    height: auto; /* Ajustar altura dinamicamente */
+}
+.banner_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container_texto {
+    width: 50%;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    text-align: justify;
+}
+
+.container_texto p {
+    font-size: 12px ;
+    text-transform: uppercase;
+    color: #022144;
+}
+
+.container_texto h2 {
+    font-size: 50px;
+    color: #022144;
+    
+}
+
+.container_texto span {
+    font-size: 50px;
+    color: #022144;
+    font-weight: 700;
+
+}
+
+.modo_escuro .banner .container_texto {
+    background-color: #333;
+}
+
+.modo_escuro  .container_texto {
+    color: #fff;
+}
+
+.modo_escuro .container_texto h2,
+.modo_escuro .container_texto span,
+.modo_escuro .container_texto p {
+    color: #fff; /* Cor branca no modo escuro */
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: none;
+    }
+    .container_texto {
+        width: 100%;
+        height: 40vh;
+        justify-content: center;
+        padding: 100px 20px;
+        gap: 0px;
+    }
+
+    .container_texto h2,
+.container_texto span,
+.container_texto p {
+    text-align: left;
+    font-size: 38px;
+}
+.container_texto p {
+    font-size: 18px;
+}
+}

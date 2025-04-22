@@ -1,0 +1,92 @@
+.rodape {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.container_contatos {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.container_logo {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container_logo p {
+    font-size: 16px;
+    color: #8a8fa3;
+}
+
+.redes_sociais {
+    max-width: 375px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes_sociais img {
+    width: 45px;
+    height: 45px;
+}
+
+.copy {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #cccccc;
+}
+.copy p span {
+    font-size: 16px;
+}
+
+.copy span {
+    color: #8a8fa3;
+    font-weight: 700;
+}
+
+.copy p {
+    color: #feb633;
+    font-weight: 700;
+}
+
+.modo_escuro .container_contatos {
+    background-color: #252525;
+}
+
+
+.modo_escuro .copy {
+    background-color: #252525;
+    border-top:1px solid #747272;
+}
+
+@media (max-width: 428px){
+    .container_logo  {
+        max-width: 90%;
+    }
+    .container_logo p {
+        text-align: center;
+    }
+    .redes_sociais {
+        width: 100%;
+        gap: 8px;
+    }
+}

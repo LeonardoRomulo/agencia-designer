@@ -1,0 +1,36 @@
+.card {
+    flex: 1 1 300px; /* Cresce, encolhe, largura mínima */
+    max-width: 48%; /* Limitar a largura máxima */
+    min-width: 300px; /* Garantir largura mínima */
+    box-sizing: border-box; /* Incluir padding e bordas no tamanho */
+    width: 300px;
+    padding: 70px 30px;
+    border: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card span {
+    font-size: 16px;
+}
+
+.card h3 {
+font-size: 24px;
+}
+
+.card small {
+font-size: 24px;
+}
+
+.card p {
+ font-size: 16px;   
+}
+
+@media (max-width: 768px){
+    .card {
+        max-width: 100%;
+        width: 100%;
+    }
+}
