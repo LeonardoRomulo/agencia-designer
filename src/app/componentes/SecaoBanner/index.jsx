@@ -1,6 +1,6 @@
 import estilos from "./Banner.module.css";
 import Image from "next/image";
-import BannerImg from "../../../../public/banner.jpg";
+import BannerImg from "../../../../public/banner1.jpg";
 
 export default function Banner(props) {
   return (
